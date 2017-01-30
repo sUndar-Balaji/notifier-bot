@@ -21,7 +21,7 @@ f=filename.readlines()
 filename.close()
 
 for i in range(1000000):
-    for tweet in api.user_timeline("NikkiBenderXXX"):
+    for tweet in api.user_timeline("Enter your favourite people's twitter handle name here and remove this description"):
         tweetDate = tweet.created_at.replace(hour=0, minute=0, second=0, microsecond=0)
         if datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) == tweetDate:
             if re.search("[on]+\slive", tweet.text):
@@ -32,7 +32,7 @@ for i in range(1000000):
                 authToken = "76fbe4b924b7954ecbe90dd19697d324"
                 twilioClient = TwilioRestClient(accountSid, authToken)
                 myTwilioNumber = "1702-534-4456"
-                destCellPhone = "+918883340453"
+                destCellPhone = "Enter your phone no or anyone you want them to notify about the tweet with country code. For Example +918883340453"
                 myMessage = twilioClient.messages.create(body = "live", from_=myTwilioNumber, to=destCellPhone)
     if msgSent == True:
         break
