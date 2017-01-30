@@ -1,6 +1,6 @@
 # notifier-twitter-bot
 
-Get instantaneous notification of your favourite twitter personality's tweet as SMS(Message) directly to your mobile.
+Search your favourite twitter personalities latest tweet(like if they are doing live streams on twitch or something else, they may post messages like "on live".you can search for those messages) and Get instantaneous notification as SMS(Message) directly to your mobile.
 
 Modify the mentioned sections in randomfacts.py with your information.
 
