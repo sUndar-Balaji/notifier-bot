@@ -4,4 +4,8 @@ Search your favourite twitter personalities latest tweet(like if they are doing 
 
 Modify the mentioned sections in randomfacts.py with your information.
 
-Host this bot in heroku as process.You are good to go
+Host this bot in heroku as process.You are good to go.
+
+Follow the below step/s to run the bot in any python environment:
+
+python randomfacts.py
