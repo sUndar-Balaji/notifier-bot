@@ -18,7 +18,7 @@ for i in range(1000000):
     for tweet in api.user_timeline("Enter your favourite people's twitter handle name here and remove this description"):
         tweetDate = tweet.created_at.replace(hour=0, minute=0, second=0, microsecond=0)
         if datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) == tweetDate:
-            if re.search("[on]+\slive", tweet.text):
+            if re.search("Enter the tweet query you want to search for", tweet.text):
                 print tweet.created_at
                 msgSent = True
                 from twilio.rest import TwilioRestClient
