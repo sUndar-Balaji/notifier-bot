@@ -5,8 +5,6 @@
 import tweepy, time, sys, re, smtplib, time, twilio, datetime
 from email.mime.text import MIMEText
 
-argfile = str(sys.argv[1])
-
 #enter the corresponding information from your Twitter application:
 CONSUMER_KEY = 'eVo5jtQTuGPNr9Cujj8kuh2BD'#keep the quotes, replace this with your consumer key
 CONSUMER_SECRET = 'pLbS9TnhP4n8pq12Q1pn1YYbEaUpUsdAs8yQ4T2AQCBZUmhukB'#keep the quotes, replace this with your consumer secret key
@@ -15,10 +13,6 @@ ACCESS_SECRET = 'lsodWGLRa3ApngRClBFos8pcq3NH9TPPJSpTFJOXXu65u'#keep the quotes,
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
-
-filename=open(argfile,'r')
-f=filename.readlines()
-filename.close()
 
 for i in range(1000000):
     for tweet in api.user_timeline("Enter your favourite people's twitter handle name here and remove this description"):
